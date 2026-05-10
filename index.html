@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loch Grierson — Graphic Design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="cursor"></div>
+<canvas id="p5-bg"></canvas>
+
+<nav>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div>
+    <div class="hero-tag reveal">Graphic Design · Chicago, IL</div>
+    <h1 class="hero-name reveal">Loch<br><span>Grierson</span></h1>
+    <p class="hero-sub reveal">BFA Graphic Design student at DePaul University. I make things that feel alive — print, identity, type, and everything in between.</p>
+  </div>
+  <div class="scroll-hint">Scroll to explore</div>
+</section>
+
+<section id="work">
+  <div class="section-label reveal">Selected Work</div>
+  <div id="physics-stage"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left">
+    <h2 class="about-heading reveal">Designing<br>for<br><em id="flip-word">you.</em></h2>
+    <div class="about-stats reveal">
+      <div>
+        <div class="stat-val">4.0</div>
+        <div class="stat-label">GPA</div>
+      </div>
+      <div>
+        <div class="stat-val">2×</div>
+        <div class="stat-label">Dean's List</div>
+      </div>
+      <div>
+        <div class="stat-val">3+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-body">
+    <p class="reveal">I'm a graphic design student at DePaul University in Chicago, originally from Minneapolis. Before design, I studied Environmental Design at CU Boulder — during my time in that program, I was taught how to think about space, systems, and how we interact with the world.</p>
+    <p class="reveal" style="transition-delay:0.1s">Those principles helped to shape my current design process. Creating user-centered designs that consider: how does this feel to hold? To read? To encounter?</p>
+    <p class="reveal" style="transition-delay:0.2s">Currently completing workshops in Illustrator, Photoshop, InDesign, and UX design. Looking for a summer internship where I can bring that curiosity somewhere real — and continue to learn.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <h2 class="contact-heading reveal">Let's<br><em>work.</em></h2>
+    <div class="contact-links">
+      <a href="mailto:lochgrierson0@gmail.com" class="contact-link reveal">lochgrierson0@gmail.com</a>
+      <a href="tel:6128591060" class="contact-link reveal" style="transition-delay:0.1s">(612) 859-1060</a>
+      <span class="contact-link reveal" style="transition-delay:0.2s; cursor:default;">Chicago, IL — Open to remote &amp; on-site</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Loch Grierson</span>
+  <span>Graphic Design · DePaul University</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+
+
+
+
+<div id="lightbox">
+  <div id="lightbox-backdrop"></div>
+  <div id="lightbox-card">
+    <button id="lightbox-close">✕ Close</button>
+    <button class="lb-arrow" id="lb-prev">←</button>
+    <button class="lb-arrow" id="lb-next">→</button>
+    <div id="lightbox-counter"></div>
+    <img id="lightbox-img" src="" alt="">
+    <div class="pcard-info">
+      <div class="pcard-num" id="lightbox-num"></div>
+      <div class="pcard-title" id="lightbox-title"></div>
+      <div class="pcard-tag" id="lightbox-tag"></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
